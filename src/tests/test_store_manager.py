@@ -69,5 +69,3 @@ def test_stock_flow(client):
     assert response.status_code == 200
     stock_data = response.get_json()
     assert stock_data['quantity'] == 5
-
-    
